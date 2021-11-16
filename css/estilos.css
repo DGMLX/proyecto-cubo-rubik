@@ -1,0 +1,278 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: #333;
+    min-height: 100vh;
+    display: flex;
+    
+}
+.contenedor{
+    margin: auto;
+    perspective: 7000px;
+    perspective-origin: 0px -1000px;
+}
+.cube{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    transform-style: preserve-3d;
+    animation: girar 5s infinite linear;
+    cursor: pointer;
+
+}
+@keyframes girar {
+    from{
+        transform: rotateY(0deg) rotateX(360deg);
+
+    } to{
+        transform: rotateY(360deg) rotateX(0deg);
+    }
+    
+}
+
+.cara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#uno{
+    
+    transform: translateZ(-150px);
+}
+ .cara-int{
+    border: 5px solid #000;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+#cuatro #uno-int{
+    background: white;
+    transform: translateX(0px);
+}
+ #cuatro #dos-int{
+    background: white;
+    transform: translateX(100px);
+}
+ #cuatro #tres-int{
+    background: white;
+    transform: translateX(200px);
+}
+ #cuatro #cuatro-int{
+    background: white;
+    transform: translateY(200px);
+}
+ #cuatro #cinco-int{
+    background: white;
+    transform: translateY(100px);
+}
+ #cuatro #seis-int{
+    background: white;
+    transform: translateY(100px) translateX(100px);
+}
+ #cuatro #siete-int{background: white;
+    transform: translateY(100px) translateX(200px);
+}
+ #cuatro #ocho-int{background: white;
+    transform: translateY(200px) translateX(100px);
+}
+ #cuatro #nueve-int{background: white;
+    transform: translateY(200px) translateX(200px);
+}
+ #uno #uno-int{
+    background: green;
+    transform: translateX(0px);
+    
+}
+ #uno #dos-int{
+    background: green;
+    transform: translateX(100px);
+}
+ #uno #tres-int{
+    background: green;
+    transform: translateX(200px);
+}
+ #uno #cuatro-int{
+    background: green;
+    transform: translateY(200px);
+}
+ #uno #cinco-int{
+   background: green;
+    transform: translateY(100px);
+}
+ #uno #seis-int{
+    background: green;
+    transform: translateY(100px) translateX(100px);
+}
+ #uno #siete-int{background: green;
+    transform: translateY(100px) translateX(200px);
+}
+ #uno #ocho-int{background: green;
+    transform: translateY(200px) translateX(100px);
+}
+ #uno #nueve-int{background: green;
+    transform: translateY(200px) translateX(200px);
+}
+
+#dos #uno-int{
+    background: red;
+    transform: translateX(0px);
+    
+}
+ #dos #dos-int{
+    background: red;
+    transform: translateX(100px);
+}
+ #dos #tres-int{
+    background: red;
+    transform: translateX(200px);
+}
+ #dos #cuatro-int{
+    background: red;
+    transform: translateY(200px);
+}
+ #dos #cinco-int{
+    background: red;
+    transform: translateY(100px);
+}
+ #dos #seis-int{
+    background: red;
+    transform: translateY(100px) translateX(100px);
+}
+ #dos #siete-int{background: red;
+    transform: translateY(100px) translateX(200px);
+}
+ #dos #ocho-int{background: red;
+    transform: translateY(200px) translateX(100px);
+}
+ #dos #nueve-int{background: red;
+    transform: translateY(200px) translateX(200px);
+}
+
+#tres #uno-int{
+    background: blue;
+    transform: translateX(0px);
+    
+}
+ #tres #dos-int{
+    background: blue;
+    transform: translateX(100px);
+}
+ #tres #tres-int{
+    background: blue;
+    transform: translateX(200px);
+}
+ #tres #cuatro-int{
+    background: blue;
+    transform: translateY(200px);
+}
+ #tres #cinco-int{
+    background: blue;
+    transform: translateY(100px);
+}
+ #tres #seis-int{
+    background: blue;
+    transform: translateY(100px) translateX(100px);
+}
+ #tres #siete-int{background: blue;
+    transform: translateY(100px) translateX(200px);
+}
+ #tres #ocho-int{background: blue;
+    transform: translateY(200px) translateX(100px);
+}
+ #tres #nueve-int{background: blue;
+    transform: translateY(200px) translateX(200px);
+}
+
+
+#cinco #uno-int{
+    background: yellow;
+    transform: translateX(0px);
+}
+ #cinco #dos-int{
+    background: yellow;
+    transform: translateX(100px);
+}
+ #cinco #tres-int{
+    background: yellow;
+    transform: translateX(200px);
+}
+ #cinco #cuatro-int{
+    background: yellow;
+    transform: translateY(200px);
+}
+ #cinco #cinco-int{
+    background: yellow;
+    transform: translateY(100px);
+}
+ #cinco #seis-int{
+    background: yellow;
+    transform: translateY(100px) translateX(100px);
+}
+ #cinco #siete-int{background: yellow;
+    transform: translateY(100px) translateX(200px);
+}
+ #cinco #ocho-int{background: yellow;
+    transform: translateY(200px) translateX(100px);
+}
+ #cinco #nueve-int{background: yellow;
+    transform: translateY(200px) translateX(200px);
+}
+#seis #uno-int{
+    background: orange;
+    transform: translateX(0px);
+}
+ #seis #dos-int{
+    background: orange;
+    transform: translateX(100px);
+}
+ #seis #tres-int{
+    background: orange;
+    transform: translateX(200px);
+}
+ #seis #cuatro-int{
+    background: orange;
+    transform: translateY(200px);
+}
+ #seis #cinco-int{
+    background: orange;
+    transform: translateY(100px);
+}
+ #seis #seis-int{
+    background: orange;
+    transform: translateY(100px) translateX(100px);
+}
+ #seis #siete-int{background: orange;
+    transform: translateY(100px) translateX(200px);
+}
+ #seis #ocho-int{background: orange;
+    transform: translateY(200px) translateX(100px);
+}
+ #seis #nueve-int{background: orange;
+    transform: translateY(200px) translateX(200px);
+}
+
+
+
+
+#dos{
+    transform: translateX(150px) rotateY(90deg);
+}
+#tres{
+    transform: translateX(-150px) rotateY(90deg);
+}
+
+#cuatro{
+    transform:translateY(150px) rotateX(90deg) ;
+}
+#cinco{
+    transform:translateY(-150px) rotateX(90deg) ;
+}
+#seis{
+    transform: translateZ(150px);
+}
+
+
+
